@@ -17,6 +17,7 @@ Instruction to Run
 	php artisan config:clear
 	php artisan route:clear
 	php artisan cache:clear
+	php artisan storage:link
 	php artisan serve --host=0.0.0.0 --port=8000
 
 4. frontend edit
