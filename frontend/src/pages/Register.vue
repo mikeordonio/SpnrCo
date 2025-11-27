@@ -51,12 +51,12 @@
     <!-- Register Form -->
     <div :class="isCompact ? 'flex items-center justify-center px-3 py-6' : 'flex items-center justify-center px-4 py-8 sm:py-12'">
       <div class="w-full max-w-md">
-      <!-- Register Card -->
-      <div :class="isCompact ? 'bg-white rounded-xl shadow-lg p-6' : 'card'">
+      <!-- Register Card: same design, different sizes for mobile/desktop -->
+      <div :class="isCompact ? 'bg-white rounded-xl shadow-lg border border-blue-300 p-6' : 'bg-white rounded-xl shadow-lg border border-blue-300 p-10'">
         <div :class="isCompact ? 'text-center mb-4' : 'text-center mb-6 sm:mb-8'">
-          <div :class="isCompact ? 'flex items-center justify-center mb-2' : 'mb-2'">
-            <img v-if="isCompact" src="/logo.png" alt="SpnrCo Logo" class="h-10 w-10 mr-2 rounded-full" />
-            <h1 :class="isCompact ? 'text-2xl font-bold text-spnr-blue-900' : 'text-3xl sm:text-4xl font-bold text-spnr-blue-900'">SpnrCo</h1>
+          <div :class="isCompact ? 'flex items-center justify-center mb-2' : 'flex items-center justify-center mb-3'">
+            <img src="/logo.png" alt="SpnrCo Logo" :class="isCompact ? 'h-10 w-10 mr-2 rounded-full' : 'h-12 w-12 mr-3 rounded-full'" />
+            <h1 :class="isCompact ? 'text-2xl font-bold text-gradient' : 'text-3xl sm:text-4xl font-bold text-gradient'">SpnrCo</h1>
           </div>
           <p :class="isCompact ? 'text-xs text-gray-600' : 'text-sm sm:text-base text-gray-600'">Create your account</p>
         </div>
