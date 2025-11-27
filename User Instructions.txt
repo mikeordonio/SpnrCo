@@ -1,0 +1,37 @@
+ADMIN USER
+Admin: admin@spnrco.com / admin123
+SHOP USER  
+Email: sol@gmail.com / Password - shop1234
+Email: john@laundryshop.com / Password: password1234
+Email: treciamaegandiq@gmail.com / Password: password123
+Email: rosa@gmail.com / Password: password123
+Email: khyla@gmail.com / Password: password123
+Email: alyza@gmail.com / Password: password123
+
+
+Instruction to Run
+1. Check IP - ipconfig
+2. backend *.env file*
+	add ip in SANCTUM_STATEFUL_DOMAINS 
+3. backend run console
+	php artisan config:clear
+	php artisan route:clear
+	php artisan cache:clear
+	php artisan serve --host=0.0.0.0 --port=8000
+
+4. frontend edit
+	*vite.config.js* 
+	server: {
+    		host: '0.0.0.0',
+  		port: 5173,
+    		proxy: {
+      			'/api': {
+        		target: 'http://10.122.75.47:8000',
+        		changeOrigin: true,
+      			}
+    		    }
+  		}
+5. frontend run console
+	npm run dev
+
+6. Disable All Firewall
