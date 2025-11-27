@@ -199,12 +199,13 @@
     background-clip: text;
   }
 
+  /* Enhanced Navbar */
   .navbar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: var(--shadow);
-    border-bottom: 1px solid var(--border-light);
+    background: linear-gradient(135deg, rgba(224, 242, 254, 0.95), rgba(186, 230, 253, 0.90));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 20px rgba(29, 78, 216, 0.15);
+    border-bottom: 2px solid rgba(29, 78, 216, 0.15);
     transition: all var(--transition-normal);
   }
 
@@ -222,7 +223,7 @@
   .nav-btn {
     @apply px-4 py-2.5 rounded-lg text-sm font-medium;
     color: var(--text-secondary);
-    background: #bedeec;
+    background: #7DD3FC;
     transition: all var(--transition-fast);
     position: relative;
     overflow: hidden;
@@ -311,6 +312,7 @@
   }
 
   .feature-card {
+    @apply flex flex-col items-center text-center;
     background: white;
     padding: 3rem 2rem;
     border-radius: var(--radius-xl);
@@ -396,14 +398,7 @@
     z-index: 0;
   }
 
-  .navbar {
-    background: linear-gradient(135deg, rgba(224, 242, 254, 0.95), rgba(186, 230, 253, 0.90));
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 4px 20px rgba(29, 78, 216, 0.15);
-    border-bottom: 2px solid rgba(29, 78, 216, 0.15);
-    transition: all var(--transition-normal);
-  }
+  
 
   @keyframes slideDown {
     from {

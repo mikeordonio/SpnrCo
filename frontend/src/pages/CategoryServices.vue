@@ -57,7 +57,7 @@
 
       <!-- Services by Shop -->
       <div v-else-if="shopServices.length > 0" class="space-y-8">
-        <div v-for="shopData in shopServices" :key="shopData.shop.id" class="card border border-blue-300">
+        <div v-for="shopData in shopServices" :key="shopData.shop.id" class="card border border-blue-300 bg-gradient-to-b from-spnr-blue-100 to-white">
           <!-- Shop Header -->
           <div class="mb-6">
             <div class="flex items-start justify-between">

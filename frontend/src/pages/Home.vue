@@ -150,7 +150,7 @@
           <div ref="featuresContainer" class="flex gap-3 overflow-x-auto pb-3 py-3 px-4 snap-x snap-mandatory scroll-smooth hide-scrollbar " style="max-width: 100%;">
           <!-- Feature 1 -->
           <div class="feature-card group flex-shrink-0 w-56 snap-center border border-blue-300">
-            <div class="w-12 h-12  rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-12 h-12 bg-indigo-100 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-6 h-6 text-spnr-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
               </svg>
@@ -172,7 +172,7 @@
 
           <!-- Feature 3 -->
           <div class="feature-card group flex-shrink-0 w-56 snap-center border border-blue-300">
-            <div class="w-12 h-12 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-12 h-12 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-6 h-6 text-spnr-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -195,7 +195,7 @@
 
         <div v-else class="grid grid-cols-3 gap-8">
           <div class="feature-card group border border-blue-300">
-            <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div class="w-20 h-20 bg-indigo-100 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-10 h-10 text-spnr-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
               </svg>
@@ -412,7 +412,7 @@
           <!-- Stat 2 -->
           <div class="stat-card text-center border border-blue-300">
             <h3 class="text-6xl font-extrabold text-gradient mb-3">{{ stats.services }}+</h3>
-            <p class="text-gray-600 font-semibold text-lg">Verified Washers</p>
+            <p class="text-gray-600 font-semibold text-lg">Services Made</p>
           </div>
 
           <!-- Stat 3 -->
