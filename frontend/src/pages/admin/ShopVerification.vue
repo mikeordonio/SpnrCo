@@ -106,7 +106,7 @@
             <div class="flex gap-3">
                 <a
                   v-if="shop.business_permit_path"
-                  :href="`${apiBaseUrl}/storage/${shop.business_permit_path}`"
+                  :href="`${apiBaseUrl}/storage/app/public/${shop.business_permit_path}`"
                   target="_blank"
                   class="inline-flex flex-1 min-w-0 items-center gap-2 p-2 sm:p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
                 >
@@ -117,7 +117,7 @@
               </a>
               <a
                 v-if="shop.owner_id_path"
-                :href="`${apiBaseUrl}/storage/${shop.owner_id_path}`"
+                :href="`${apiBaseUrl}/storage/app/public/${shop.owner_id_path}`"
                 target="_blank"
                 class="inline-flex flex-1 min-w-0 items-center gap-2 p-2 sm:p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
               >
@@ -128,7 +128,7 @@
               </a>
               <a
                 v-if="shop.proof_of_address_path"
-                :href="`${apiBaseUrl}/storage/${shop.proof_of_address_path}`"
+                :href="`${apiBaseUrl}/storage/app/public/${shop.proof_of_address_path}`"
                 target="_blank"
                 class="inline-flex flex-1 min-w-0 items-center gap-2 p-2 sm:p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors"
               >

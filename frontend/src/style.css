@@ -223,7 +223,7 @@
   .nav-btn {
     @apply px-4 py-2.5 rounded-lg text-sm font-medium;
     color: var(--text-secondary);
-    background:#BAE6FD;
+    background: #BAE6FD;
     transition: all var(--transition-fast);
     position: relative;
     overflow: hidden;
