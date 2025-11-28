@@ -190,9 +190,9 @@ class ShopOwnerController extends Controller
         // Get period label and date range
         $periodInfo = $this->getPeriodInfo($period);
         
-        // Get filtered orders
+        // Get filtered orders (include completed statuses: delivered and picked up)
         $query = Order::where('shop_id', $shop->id)
-            ->where('order_status', 'delivered')
+            ->whereIn('order_status', ['delivered', 'picked_up'])
             ->with(['service', 'customer']);
 
         switch ($period) {
@@ -212,9 +212,15 @@ class ShopOwnerController extends Controller
         }
 
         $orders = $query->orderBy('updated_at', 'desc')->get();
-        
-        $totalRevenue = $orders->sum(function($order) {
-            return $order->final_shop_revenue ?? $order->shop_revenue;
+
+        // Compute shop revenue as 90% of the order amount (final_amount if set, otherwise total_amount)
+        $totalRevenue = 0;
+        $orders->transform(function($order) use (&$totalRevenue) {
+            $amount = $order->final_amount ?? $order->total_amount;
+            $display = round(($amount * 0.90), 2);
+            $order->display_shop_revenue = $display;
+            $totalRevenue += $display;
+            return $order;
         });
         
         $data = [

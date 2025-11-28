@@ -98,17 +98,17 @@
     <div class="header">
         <h1 class="logo">SpnrCo</h1>
         <p class="report-title">Sales Report</p>
-        <p class="report-period">{{ $period }} - {{ $dateRange }}</p>
+        <p class="report-period"><?php echo e($period); ?> - <?php echo e($dateRange); ?></p>
     </div>
 
     <div class="info-section">
-        <h3>{{ $shop->shop_name }}</h3>
-        <p><strong>Address:</strong> {{ $shop->address }}</p>
-        <p><strong>Contact:</strong> {{ $shop->contact_number }}</p>
-        <p><strong>Total Orders:</strong> {{ $totalOrders }} | <strong>Shop Revenue (90%):</strong> {{ number_format($totalRevenue, 2) }}</p>
+        <h3><?php echo e($shop->shop_name); ?></h3>
+        <p><strong>Address:</strong> <?php echo e($shop->address); ?></p>
+        <p><strong>Contact:</strong> <?php echo e($shop->contact_number); ?></p>
+        <p><strong>Total Orders:</strong> <?php echo e($totalOrders); ?> | <strong>Shop Revenue (90%):</strong> <?php echo e(number_format($totalRevenue, 2)); ?></p>
     </div>
 
-    @if($orders->count() > 0)
+    <?php if($orders->count() > 0): ?>
         <table>
             <thead>
                 <tr>
@@ -122,38 +122,39 @@
                 </tr>
             </thead>
             <tbody>
-                @php
+                <?php
                     $totalAmount = 0;
-                @endphp
-                @foreach($orders as $order)
-                    @php
+                ?>
+                <?php $__currentLoopData = $orders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $order): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <?php
                         $amount = $order->final_amount ?? $order->total_amount;
                         $totalAmount += $amount;
-                    @endphp
+                    ?>
                     <tr>
-                        <td>{{ \Carbon\Carbon::parse($order->updated_at)->format('M d, Y') }}</td>
-                        <td>{{ $order->tracking_number }}</td>
-                        <td>{{ $order->customer->name }}</td>
-                        <td>{{ $order->service->service_name }}</td>
-                        <td class="text-center">{{ $order->weight_kg ? number_format($order->weight_kg, 2) : '-' }}</td>
-                        <td class="text-right">{{ number_format($amount, 2) }}</td>
-                        <td class="text-right">{{ number_format($order->display_shop_revenue ?? ($order->final_shop_revenue ?? $order->shop_revenue), 2) }}</td>
+                        <td><?php echo e(\Carbon\Carbon::parse($order->updated_at)->format('M d, Y')); ?></td>
+                        <td><?php echo e($order->tracking_number); ?></td>
+                        <td><?php echo e($order->customer->name); ?></td>
+                        <td><?php echo e($order->service->service_name); ?></td>
+                        <td class="text-center"><?php echo e($order->weight_kg ? number_format($order->weight_kg, 2) : '-'); ?></td>
+                        <td class="text-right"><?php echo e(number_format($amount, 2)); ?></td>
+                        <td class="text-right"><?php echo e(number_format($order->display_shop_revenue ?? ($order->final_shop_revenue ?? $order->shop_revenue), 2)); ?></td>
                     </tr>
-                @endforeach
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 <tr class="total-row">
                     <td colspan="5" class="text-right"><strong>TOTAL</strong></td>
-                    <td class="text-right"><strong>{{ number_format($totalAmount, 2) }}</strong></td>
-                    <td class="text-right"><strong>{{ number_format($totalRevenue, 2) }}</strong></td>
+                    <td class="text-right"><strong><?php echo e(number_format($totalAmount, 2)); ?></strong></td>
+                    <td class="text-right"><strong><?php echo e(number_format($totalRevenue, 2)); ?></strong></td>
                 </tr>
             </tbody>
         </table>
-    @else
+    <?php else: ?>
         <div class="no-data">No orders found for this period</div>
-    @endif
+    <?php endif; ?>
 
     <div class="footer">
-        <p>Generated on {{ $generatedAt }} | SpnrCo Laundry Booking System</p>
+        <p>Generated on <?php echo e($generatedAt); ?> | SpnrCo Laundry Booking System</p>
         <p>Note: Shop revenue is 90% of total amount. Platform fee (10%) is deducted.</p>
     </div>
 </body>
 </html>
+<?php /**PATH C:\Users\ADMIN PC\Desktop\SpnrCo\backend\resources\views/reports/shop-sales.blade.php ENDPATH**/ ?>

@@ -174,8 +174,8 @@ class AdminController extends Controller
         // Get period label and date range
         $periodInfo = $this->getPeriodInfo($period);
         
-        // Get filtered orders
-        $query = Order::where('order_status', 'delivered')
+        // Get filtered orders (include completed statuses: delivered and picked up)
+        $query = Order::whereIn('order_status', ['delivered', 'picked_up'])
             ->with(['service', 'customer', 'shop']);
 
         switch ($period) {
