@@ -264,12 +264,12 @@ const handleRegister = async () => {
 // Social Registration Handlers
 const handleGoogleRegister = () => {
   // Redirect to backend Google OAuth endpoint with registration intent
-  window.location.href = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/auth/google?register=true`
+  window.location.href = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/auth/google?register=true`
 }
 
 const handleFacebookRegister = () => {
   // Redirect to backend Facebook OAuth endpoint with registration intent
-  window.location.href = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/auth/facebook?register=true`
+  window.location.href = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/auth/facebook?register=true`
 }
 
 onMounted(() => {
