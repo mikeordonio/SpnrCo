@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2025 at 04:28 PM
+-- Generation Time: Nov 29, 2025 at 11:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -149,33 +149,41 @@ INSERT INTO `notifications` (`id`, `order_id`, `user_id`, `message`, `is_read`, 
 (218, 38, 25, 'Your order has been approved (Order #SPNR-B1ATRRT5IC)', 1, '2025-11-25 21:30:10', '2025-11-25 21:33:01'),
 (219, 38, 25, 'Please complete your payment of ₱175.00 (Order #SPNR-B1ATRRT5IC)', 1, '2025-11-25 21:30:19', '2025-11-25 21:33:01'),
 (220, 38, 2, 'Payment received! Order #SPNR-B1ATRRT5IC paid ₱175.00 via paymaya', 1, '2025-11-25 21:33:27', '2025-11-25 23:30:31'),
-(221, 38, 25, 'Payment successful! Your order #SPNR-B1ATRRT5IC is now being processed.', 0, '2025-11-25 21:33:27', '2025-11-25 21:33:27'),
-(222, 38, 25, 'Your order has been completed (Order #SPNR-B1ATRRT5IC)', 0, '2025-11-25 21:34:40', '2025-11-25 21:34:40'),
-(223, 38, 25, 'Your order is ready for pickup (Order #SPNR-B1ATRRT5IC)', 0, '2025-11-25 21:34:43', '2025-11-25 21:34:43'),
+(221, 38, 25, 'Payment successful! Your order #SPNR-B1ATRRT5IC is now being processed.', 1, '2025-11-25 21:33:27', '2025-11-27 07:50:29'),
+(222, 38, 25, 'Your order has been completed (Order #SPNR-B1ATRRT5IC)', 1, '2025-11-25 21:34:40', '2025-11-27 07:50:29'),
+(223, 38, 25, 'Your order is ready for pickup (Order #SPNR-B1ATRRT5IC)', 1, '2025-11-25 21:34:43', '2025-11-27 07:50:29'),
 (224, 39, 2, 'New Drop-off/Pick-up order received from Mike Ordonio', 1, '2025-11-25 21:35:03', '2025-11-25 23:30:31'),
-(225, 39, 25, 'Your order has been approved (Order #SPNR-9JJORMMMWR)', 0, '2025-11-25 21:35:15', '2025-11-25 21:35:15'),
+(225, 39, 25, 'Your order has been approved (Order #SPNR-9JJORMMMWR)', 1, '2025-11-25 21:35:15', '2025-11-27 07:50:29'),
 (226, 40, 2, 'New Home Delivery order received from Mike Ordonio', 1, '2025-11-25 21:48:35', '2025-11-25 23:30:31'),
-(227, 40, 25, 'Your order has been approved (Order #SPNR-VHKGMFRZIC)', 0, '2025-11-25 21:48:52', '2025-11-25 21:48:52'),
-(228, 40, 25, 'Please complete your payment of ₱260.00 (includes ₱50.00 delivery fee) (Order #SPNR-VHKGMFRZIC)', 0, '2025-11-25 21:49:03', '2025-11-25 21:49:03'),
+(227, 40, 25, 'Your order has been approved (Order #SPNR-VHKGMFRZIC)', 1, '2025-11-25 21:48:52', '2025-11-27 07:50:29'),
+(228, 40, 25, 'Please complete your payment of ₱260.00 (includes ₱50.00 delivery fee) (Order #SPNR-VHKGMFRZIC)', 1, '2025-11-25 21:49:03', '2025-11-27 07:50:28'),
 (229, 40, 2, 'Payment received! Order #SPNR-VHKGMFRZIC paid ₱260.00 via gcash', 1, '2025-11-25 21:49:22', '2025-11-25 23:30:31'),
-(230, 40, 25, 'Payment successful! Your order #SPNR-VHKGMFRZIC is now being processed.', 0, '2025-11-25 21:49:22', '2025-11-25 21:49:22'),
-(231, 40, 25, 'Your order has been completed (Order #SPNR-VHKGMFRZIC)', 0, '2025-11-25 21:49:31', '2025-11-25 21:49:31'),
-(232, 40, 25, 'Your order is out for delivery (Order #SPNR-VHKGMFRZIC)', 0, '2025-11-25 21:49:34', '2025-11-25 21:49:34'),
-(233, 40, 25, 'Your order has been delivered (Order #SPNR-VHKGMFRZIC)', 0, '2025-11-25 21:49:37', '2025-11-25 21:49:37'),
+(230, 40, 25, 'Payment successful! Your order #SPNR-VHKGMFRZIC is now being processed.', 1, '2025-11-25 21:49:22', '2025-11-27 07:50:28'),
+(231, 40, 25, 'Your order has been completed (Order #SPNR-VHKGMFRZIC)', 1, '2025-11-25 21:49:31', '2025-11-27 07:50:28'),
+(232, 40, 25, 'Your order is out for delivery (Order #SPNR-VHKGMFRZIC)', 1, '2025-11-25 21:49:34', '2025-11-27 07:50:28'),
+(233, 40, 25, 'Your order has been delivered (Order #SPNR-VHKGMFRZIC)', 1, '2025-11-25 21:49:37', '2025-11-27 07:50:28'),
 (234, 39, 25, 'Your order has been cancelled by the shop (Order #SPNR-9JJORMMMWR)', 1, '2025-11-25 23:30:38', '2025-11-25 23:31:12'),
 (235, 41, 2, 'New Drop-off/Pick-up order received from Mike Ordonio', 1, '2025-11-25 23:41:12', '2025-11-25 23:43:00'),
-(236, 41, 25, 'Your order has been approved (Order #SPNR-I2A87XZAPE)', 0, '2025-11-25 23:41:24', '2025-11-25 23:41:24'),
-(237, 41, 25, 'Please complete your payment of ₱70.00 (Order #SPNR-I2A87XZAPE)', 0, '2025-11-25 23:41:27', '2025-11-25 23:41:27'),
+(236, 41, 25, 'Your order has been approved (Order #SPNR-I2A87XZAPE)', 1, '2025-11-25 23:41:24', '2025-11-27 07:50:28'),
+(237, 41, 25, 'Please complete your payment of ₱70.00 (Order #SPNR-I2A87XZAPE)', 1, '2025-11-25 23:41:27', '2025-11-27 07:50:27'),
 (238, 42, 2, 'New Home Delivery order received from Mike Ordonio', 1, '2025-11-25 23:41:43', '2025-11-25 23:43:00'),
-(239, 42, 25, 'Your order has been approved (Order #SPNR-GGAQNZJ4RK)', 0, '2025-11-25 23:42:07', '2025-11-25 23:42:07'),
-(240, 42, 25, 'Your order has been cancelled by the shop (Order #SPNR-GGAQNZJ4RK)', 0, '2025-11-25 23:42:11', '2025-11-25 23:42:11'),
-(241, 38, 25, 'Your order has been picked up (Order #SPNR-B1ATRRT5IC)', 0, '2025-11-25 23:42:22', '2025-11-25 23:42:22'),
+(239, 42, 25, 'Your order has been approved (Order #SPNR-GGAQNZJ4RK)', 1, '2025-11-25 23:42:07', '2025-11-27 07:50:27'),
+(240, 42, 25, 'Your order has been cancelled by the shop (Order #SPNR-GGAQNZJ4RK)', 1, '2025-11-25 23:42:11', '2025-11-27 07:50:27'),
+(241, 38, 25, 'Your order has been picked up (Order #SPNR-B1ATRRT5IC)', 1, '2025-11-25 23:42:22', '2025-11-27 07:50:27'),
 (242, 41, 2, 'Payment received! Order #SPNR-I2A87XZAPE paid ₱70.00 via paymaya', 1, '2025-11-25 23:42:29', '2025-11-25 23:43:00'),
-(243, 41, 25, 'Payment successful! Your order #SPNR-I2A87XZAPE is now being processed.', 0, '2025-11-25 23:42:29', '2025-11-25 23:42:29'),
-(244, 41, 25, 'Your order has been completed (Order #SPNR-I2A87XZAPE)', 0, '2025-11-25 23:42:37', '2025-11-25 23:42:37'),
-(245, 41, 25, 'Your order is ready for pickup (Order #SPNR-I2A87XZAPE)', 0, '2025-11-25 23:42:39', '2025-11-25 23:42:39'),
-(246, 41, 25, 'Your order has been picked up (Order #SPNR-I2A87XZAPE)', 0, '2025-11-25 23:42:42', '2025-11-25 23:42:42'),
-(247, 43, 21, 'New Drop-off/Pick-up order received from Mike Ordonio', 0, '2025-11-25 23:53:13', '2025-11-25 23:53:13');
+(243, 41, 25, 'Payment successful! Your order #SPNR-I2A87XZAPE is now being processed.', 1, '2025-11-25 23:42:29', '2025-11-27 07:50:27'),
+(244, 41, 25, 'Your order has been completed (Order #SPNR-I2A87XZAPE)', 1, '2025-11-25 23:42:37', '2025-11-27 07:50:27'),
+(245, 41, 25, 'Your order is ready for pickup (Order #SPNR-I2A87XZAPE)', 1, '2025-11-25 23:42:39', '2025-11-27 07:50:27'),
+(246, 41, 25, 'Your order has been picked up (Order #SPNR-I2A87XZAPE)', 1, '2025-11-25 23:42:42', '2025-11-27 07:50:26'),
+(247, 43, 21, 'New Drop-off/Pick-up order received from Mike Ordonio', 0, '2025-11-25 23:53:13', '2025-11-25 23:53:13'),
+(248, 44, 2, 'New Drop-off/Pick-up order received from May Ordonio', 1, '2025-11-28 06:21:36', '2025-11-28 06:29:47'),
+(249, 44, 5, 'Your order has been approved (Order #SPNR-NC8ES7MYDQ)', 0, '2025-11-28 06:22:07', '2025-11-28 06:22:07'),
+(250, 44, 5, 'Please complete your payment of ₱52.50 (Order #SPNR-NC8ES7MYDQ)', 0, '2025-11-28 06:23:11', '2025-11-28 06:23:11'),
+(251, 44, 2, 'Payment received! Order #SPNR-NC8ES7MYDQ paid ₱52.50 via paymaya', 1, '2025-11-28 06:26:15', '2025-11-28 06:29:46'),
+(252, 44, 5, 'Payment successful! Your order #SPNR-NC8ES7MYDQ is now being processed.', 0, '2025-11-28 06:26:15', '2025-11-28 06:26:15'),
+(253, 44, 5, 'Your order has been completed (Order #SPNR-NC8ES7MYDQ)', 0, '2025-11-28 06:44:41', '2025-11-28 06:44:41'),
+(254, 44, 5, 'Your order is ready for pickup (Order #SPNR-NC8ES7MYDQ)', 0, '2025-11-28 06:44:43', '2025-11-28 06:44:43'),
+(255, 44, 5, 'Your order has been picked up (Order #SPNR-NC8ES7MYDQ)', 0, '2025-11-28 06:44:46', '2025-11-28 06:44:46');
 
 -- --------------------------------------------------------
 
@@ -249,7 +257,8 @@ INSERT INTO `orders` (`id`, `customer_id`, `shop_id`, `service_id`, `delivery_ad
 (40, 25, 1, 1, 'qw, qw, qw, qw, qw', 'qw, qw, qw, qw, qw', '1231', 'delivered', '2025-11-25 21:48:52', '2025-11-25 21:49:22', '2025-11-25 21:49:03', NULL, '2025-11-25 21:49:34', '2025-11-25 21:49:37', NULL, NULL, 'online', 'paid', NULL, NULL, 'gcash', NULL, '2025-11-25 21:49:22', 'delivery', 35.00, 50.00, 6.00, 260.00, 189.00, 21.00, 31.50, 3.50, 'SPNR-VHKGMFRZIC', '2025-11-25 21:48:35', '2025-11-25 21:49:37'),
 (41, 25, 1, 1, NULL, NULL, '2113', 'picked_up', '2025-11-25 23:41:24', '2025-11-25 23:42:29', '2025-11-25 23:41:27', '2025-11-25 23:42:39', NULL, NULL, '2025-11-25 23:42:42', NULL, 'online', 'paid', NULL, NULL, 'paymaya', NULL, '2025-11-25 23:42:29', 'pickup', 35.00, 0.00, 2.00, 70.00, 63.00, 7.00, 31.50, 3.50, 'SPNR-I2A87XZAPE', '2025-11-25 23:41:12', '2025-11-25 23:42:42'),
 (42, 25, 1, 2, 'qw, qw, qw, qw, qw', 'qw, qw, qw, qw, qw', '12312', 'cancelled', '2025-11-25 23:42:07', NULL, NULL, NULL, NULL, NULL, NULL, '2025-11-25 23:42:11', 'online', 'pending', NULL, NULL, NULL, NULL, NULL, 'delivery', 68.00, 50.00, NULL, NULL, NULL, NULL, 61.20, 6.80, 'SPNR-GGAQNZJ4RK', '2025-11-25 23:41:43', '2025-11-25 23:42:11'),
-(43, 25, 7, 27, NULL, NULL, '125421', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'online', 'pending', NULL, NULL, NULL, NULL, NULL, 'pickup', 60.00, 0.00, NULL, NULL, NULL, NULL, 54.00, 6.00, 'SPNR-A6PWAFX0UO', '2025-11-25 23:53:13', '2025-11-25 23:53:13');
+(43, 25, 7, 27, NULL, NULL, '125421', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'online', 'pending', NULL, NULL, NULL, NULL, NULL, 'pickup', 60.00, 0.00, NULL, NULL, NULL, NULL, 54.00, 6.00, 'SPNR-A6PWAFX0UO', '2025-11-25 23:53:13', '2025-11-25 23:53:13'),
+(44, 5, 1, 1, NULL, NULL, '5551234567', 'picked_up', '2025-11-28 06:22:06', '2025-11-28 06:26:15', '2025-11-28 06:23:11', '2025-11-28 06:44:43', NULL, NULL, '2025-11-28 06:44:46', NULL, 'online', 'paid', NULL, NULL, 'paymaya', NULL, '2025-11-28 06:26:15', 'pickup', 35.00, 0.00, 1.50, 52.50, 47.25, 5.25, 31.50, 3.50, 'SPNR-NC8ES7MYDQ', '2025-11-28 06:21:36', '2025-11-28 06:44:46');
 
 -- --------------------------------------------------------
 
@@ -361,7 +370,7 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (241, 'App\\Models\\User', 1, 'auth_token', '205323731318fd675207e308eaaeb25302d376ffbb25b94f5fdae273426cff8a', '[\"*\"]', '2025-11-27 05:35:23', NULL, '2025-11-27 05:35:19', '2025-11-27 05:35:23'),
 (244, 'App\\Models\\User', 1, 'auth_token', '64345a4b9ce3d696bb08576d5927adeca6f4c065e4e995b77ba187d5eac5da48', '[\"*\"]', '2025-11-27 05:44:53', NULL, '2025-11-27 05:44:43', '2025-11-27 05:44:53'),
 (246, 'App\\Models\\User', 1, 'auth_token', 'd41169679aded86c1c79162ba235c56e1f87c83842334420d3cc64c7efa76ef9', '[\"*\"]', '2025-11-27 05:51:13', NULL, '2025-11-27 05:49:10', '2025-11-27 05:51:13'),
-(252, 'App\\Models\\User', 1, 'auth_token', 'cbd65056921571ccba55ca8b5aaa4db8af68e6b649a362b6825f693783a4fd16', '[\"*\"]', '2025-11-27 07:24:45', NULL, '2025-11-27 07:16:48', '2025-11-27 07:24:45');
+(266, 'App\\Models\\User', 2, 'auth_token', '1d976efef268c1258370ce049f04075ff53f9219e7ba7a5e07ad49bbd9e4853b', '[\"*\"]', '2025-11-28 17:27:43', NULL, '2025-11-28 06:29:43', '2025-11-28 17:27:43');
 
 -- --------------------------------------------------------
 
@@ -547,7 +556,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `google_id`, `facebook_id`, `avatar`
 (22, 'Rosa May Gasco', 'rosa@gmail.com', NULL, NULL, NULL, NULL, '$2y$12$m3YbCSPP9sHoKFqwOjK/tenVUwiRogxSED4Dedki.4kgE/4fhdsOW', 'owner', '+63546897512', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-25 19:27:19', '2025-11-25 19:27:19'),
 (23, 'Khyla Enriquez', 'khyla@gmail.com', NULL, NULL, NULL, NULL, '$2y$12$ixGn8ApVPxcv3RtW6p9LsOU9eN1qNgk5fl1a5m1XXY8fPfofwjoPq', 'owner', '+6354682137', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-25 19:33:34', '2025-11-25 19:33:34'),
 (24, 'Alyza Joy Belga', 'alyza@gmail.com', NULL, NULL, NULL, NULL, '$2y$12$blSm7nILWD73eJhFikNx4ufEpSKmucT1EzYRKcDZ2dyhTdUKDfbWa', 'owner', '+6354686112', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-25 19:38:47', '2025-11-25 19:38:47'),
-(25, 'Mike Ordonio', 'mikeordonio@gmail.com', '113265448360393819997', NULL, 'https://lh3.googleusercontent.com/a/ACg8ocIPA0fdIPDiFxty4IyCH5NAHNKJXanTw8MEyAi_-DVUKnBjugIZ=s96-c', NULL, '$2y$12$/HJvRKfRCAuTeCfvkfxiTeqGPDIUlVMMYSgSkAbKcXRnX9dV8w6v2', 'customer', NULL, NULL, NULL, 'qw', 'qw', 'qw', 'qw', 'qw', 1, NULL, '2025-11-25 19:42:00', '2025-11-25 21:13:45'),
+(25, 'Mike Ordonio', 'mikeordonio@gmail.com', '113265448360393819997', '24981289941493593', 'https://lh3.googleusercontent.com/a/ACg8ocIPA0fdIPDiFxty4IyCH5NAHNKJXanTw8MEyAi_-DVUKnBjugIZ=s96-c', NULL, '$2y$12$uwD2353SI/yxYcdNTD6jduOTg.yfXmDmpYFaCcT9d30ls6.e62PMa', 'customer', NULL, NULL, NULL, 'qw', 'qw', 'qw', 'qw', 'qw', 1, NULL, '2025-11-25 19:42:00', '2025-11-28 06:15:32'),
 (26, 'mayk', 'maykiwhip@gmail.com', '111697364348005287379', NULL, 'https://lh3.googleusercontent.com/a/ACg8ocIxr-Hes2zQYWsz6MAlMto9vhMtcThiEEOzGFSWkMvxCqIk0g=s96-c', NULL, '$2y$12$s0Im.ZFfv96TMdW6CoJzHuwgEdO430jSYYQfch469GB1HGMwTHDL6', 'customer', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-25 20:42:34', '2025-11-25 20:42:34'),
 (27, 'qwe', 'qwe@gmail.com', NULL, NULL, NULL, NULL, '$2y$12$CNNfyR8NJNHSmkfm/diw1O/tRj87LB63Ow39RllSDs2/.zaSwk9cC', 'owner', '12321421', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-27 06:11:02', '2025-11-27 06:11:02'),
 (28, 'qwe', 'qqwe@gmail.com', NULL, NULL, NULL, NULL, '$2y$12$dex6sgLb1w4iSS1v6UgrVu5Rzp94gF1JAWlzDFL9ZY85s3Sh/a5SG', 'owner', '12321', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2025-11-27 07:01:05', '2025-11-27 07:01:05'),
@@ -666,19 +675,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=248;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=256;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=254;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=268;
 
 --
 -- AUTO_INCREMENT for table `services`
